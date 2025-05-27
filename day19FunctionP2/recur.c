@@ -4,7 +4,7 @@
 
 
 
-int fact(int num)
+int fact(int num)// 5 //4//3//2//1//0
 {
 
   if (num == 0)
@@ -14,9 +14,14 @@ int fact(int num)
   else
   {
 
-    return num * fact(num - 1); // recursion  function
+    return num * fact(num - 1); // recursion  function 
   }
 }
+// 5 * 4* 3* 2* 1* 1//120
+// 
+// 
+// 
+// 
 
 int main()
 {
