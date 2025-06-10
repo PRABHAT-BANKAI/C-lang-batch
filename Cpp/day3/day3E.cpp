@@ -6,14 +6,15 @@ using namespace std;
 class Employee
 {
 private:
-  char name[50];
+  string name;
   int power;
 
 public:
-  int setter(int pow)
+  int setter(int pow, string userName)
   {
     // strcpy(this->name, userName); //{name:"batman"}
     this->power = pow;
+   this->name=userName;
   }
 
   void getter() // methods
@@ -28,9 +29,9 @@ int main()
 
   Employee e1, e2;
 
-  e1.setter(400);
+  e1.setter(400, "batman");
 
-  e2.setter(700);
+  e2.setter(700, "superman");
   e2.getter();
   e1.getter();
 
