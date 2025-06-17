@@ -15,12 +15,12 @@ public:
   char name[100];
 
   // paramaterised constructor
-  City(int i) // constructor
+  City(int i, const char n[]) // constructor
   {
     this->id = i;
-    // strcpy(this->name, n);
+    strcpy(this->name, n);
 
-    // cout << "welcome to city" << endl;
+    cout << "welcome to city" << endl;
 
     cout << this->id << " " << endl;
   }
@@ -40,13 +40,14 @@ int main()
   // City c2;
 
   // City c[10]; // it means contructor function call 10 times
+  City c1(1, "batman");
 
-  City c1(1);
-  City c2(2);
-  City c3(3);
-  City c4(4);
+  // City c1(1);
+  // City c2(2);
+  // City c3(3);
+  // City c4(4);
 
-  City c5(5);
-  City c6;
+  // City c5(5);
+  // City c6;
   return 0;
 }
